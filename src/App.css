@@ -6,8 +6,15 @@
   line-height:0cm;
   /* margin-top: 2rem; */
 }
-.Perform {
-
+a { color: white; text-decoration: none;}
+a:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: white;
+    color:red
+}
+a:hover {
+    color:red
 }
 
 .App-logo {

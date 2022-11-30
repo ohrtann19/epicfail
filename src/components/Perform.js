@@ -20,6 +20,7 @@ export default function Perform({item, onMouseOver}) {
   }
     return <div className="Perform">
         {(item.word.trim() == "perform") ? <p onMouseOver={() => handleClick()} style={{ color: active ? "black" : "white" }}>{item.word}</p>
-        : <button style={{ visibility: visibleV ? "hidden" : "visible", color: resisting ? "red" : "black"}} onMouseOver={() => handleButtonHover()} onFocus={(e) => handleButtonClick(e)}onClick={(e) => handleButtonHover()}>refuse</button>}
+        : (item.word.trim() == "refuse" ? <button style={{ visibility: visibleV ? "hidden" : "visible", color: resisting ? "red" : "black"}} onMouseOver={() => handleButtonHover()} onFocus={(e) => handleButtonClick(e)}onClick={(e) => handleButtonHover()}>refuse</button>
+        : <a onMouseOver={() => handleClick()} href="https://ohrtann19.github.io/errorfail/">no way out</a>)}
     </div>
 }
